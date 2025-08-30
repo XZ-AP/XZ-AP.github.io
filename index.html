@@ -7,7 +7,7 @@
     <!-- 引入外部资源 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+    
     <!-- Tailwind 配置 - 黑白色系 -->
     <script>
         tailwind.config = {
@@ -31,7 +31,7 @@
             }
         }
     </script>
-
+    
     <style type="text/tailwindcss">
         @layer utilities {
             .content-auto {
@@ -55,7 +55,7 @@
                 background-image: url('photo0.png');
                 background-size: cover;
                 background-position: center;
-                filter: grayscale(0%) brightness(30%) contrast(120%);
+                filter: grayscale(100%) brightness(30%) contrast(120%);
             }
             /* Logo图片样式 */
             .logo-image {
@@ -79,41 +79,41 @@
                         <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-lg overflow-hidden">
                             <img src="logo.png" alt="品牌Logo" class="logo-image">
                         </div>
-                        <span class="text-xl font-bold tracking-tight text-white shadow-md">隐律实验室</span>
+                        <span class="text-xl font-bold tracking-tight text-white shadow-md">Brand</span>
                     </a>
                 </div>
-
+                
                 <div class="h-full w-full relative">
                     <!-- 主图片容器 - 循环切换的三张图片（保持原色） -->
                     <div class="h-full w-full relative" id="main-image-container">
-                        <img
-                            src="photo1.png"
-                            alt="现代生活方式展示图1"
+                        <img 
+                            src="photo1.png" 
+                            alt="现代生活方式展示图1" 
                             class="main-image absolute inset-0 h-full w-full object-cover object-center image-transition opacity-100"
                             data-index="0"
                         >
-                        <img
-                            src="photo2.png"
-                            alt="现代生活方式展示图2"
+                        <img 
+                            src="photo2.png" 
+                            alt="现代生活方式展示图2" 
                             class="main-image absolute inset-0 h-full w-full object-cover object-center image-transition opacity-0"
                             data-index="1"
                         >
-                        <img
-                            src="photo3.png"
-                            alt="现代生活方式展示图3"
+                        <img 
+                            src="photo3.png" 
+                            alt="现代生活方式展示图3" 
                             class="main-image absolute inset-0 h-full w-full object-cover object-center image-transition opacity-0"
                             data-index="2"
                         >
                     </div>
-
+                    
                     <!-- 固定的黑色系图片蒙版 -->
                     <div class="absolute inset-0 fixed-mask opacity-50 mix-blend-multiply"></div>
-
+                    
                     <!-- 额外黑色渐变增强蒙版效果 -->
                     <div class="absolute inset-0 bg-gradient-to-r from-primary/30 to-transparent"></div>
                 </div>
             </div>
-
+            
             <!-- 右侧文字内容（黑白色系） -->
             <div class="w-full md:w-golden-right flex items-center justify-center p-8 md:p-16 lg:p-24 bg-white">
                 <div class="max-w-2xl">
@@ -127,29 +127,29 @@
                     <p class="text-neutral text-lg mb-8 leading-relaxed">
                         我们的产品融合了创新科技与人性化设计，为您带来前所未有的生活体验。让每一天都充满活力与效率。无论是工作、学习还是休闲娱乐，我们的解决方案都能满足您的多样化需求。
                     </p>
-
+                    
                     <!-- 特点列表 -->
                     <div class="space-y-4 mb-10">
                         <div class="flex items-start">
                             <div class="mt-1 w-6 h-6 rounded-full bg-primary/5 flex items-center justify-center flex-shrink-0">
                                 <i class="fa fa-check text-primary text-sm"></i>
                             </div>
-                            <p class="ml-4 text-primary">创新设计，符合人体工学，长时间使用更舒适</p>
+                            <a href="http://www.2.com" class="ml-4 text-primary hover:text-neutral transition-colors">创新设计，符合人体工学，长时间使用更舒适</a>
                         </div>
                         <div class="flex items-start">
                             <div class="mt-1 w-6 h-6 rounded-full bg-primary/5 flex items-center justify-center flex-shrink-0">
                                 <i class="fa fa-check text-primary text-sm"></i>
                             </div>
-                            <p class="ml-4 text-primary">环保材料，可持续发展理念，关爱地球家园</p>
+                            <a href="http://www.3.com" class="ml-4 text-primary hover:text-neutral transition-colors">环保材料，可持续发展理念，关爱地球家园</a>
                         </div>
                         <div class="flex items-start">
                             <div class="mt-1 w-6 h-6 rounded-full bg-primary/5 flex items-center justify-center flex-shrink-0">
                                 <i class="fa fa-check text-primary text-sm"></i>
                             </div>
-                            <p class="ml-4 text-primary">智能连接，无缝融入数字生活，多设备协同工作</p>
+                            <a href="http://www.4.com" class="ml-4 text-primary hover:text-neutral transition-colors">智能连接，无缝融入数字生活，多设备协同工作</a>
                         </div>
                     </div>
-
+                    
                     <!-- 行动按钮组（仅保留观看演示） -->
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="https://xz-ap.github.io/velapulse/" class="inline-flex items-center justify-center px-8 py-4 rounded-full border border-gray-300 text-primary font-medium hover:bg-gray-light transition-all text-center">
@@ -160,7 +160,7 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- 特点介绍（黑白色系） -->
         <section id="features" class="py-20 bg-light">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -174,7 +174,7 @@
                 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- 特点1 -->
-                    <a href="http://www.2.com" class="block bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow group hover-lift">
+                    <a href="https://xz-ap.github.io/velapulse/projects/" class="block bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow group hover-lift">
                         <div class="w-14 h-14 rounded-xl bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                             <i class="fa fa-lightbulb-o text-2xl text-primary group-hover:text-white transition-colors"></i>
                         </div>
@@ -183,7 +183,7 @@
                     </a>
                     
                     <!-- 特点2 -->
-                    <a href="http://www.3.com" class="block bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow group hover-lift">
+                    <a href="https://xz-ap.github.io/velapulse/projects/" class="block bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow group hover-lift">
                         <div class="w-14 h-14 rounded-xl bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                             <i class="fa fa-leaf text-2xl text-primary group-hover:text-white transition-colors"></i>
                         </div>
@@ -192,50 +192,13 @@
                     </a>
                     
                     <!-- 特点3 -->
-                    <a href="http://www.4.com" class="block bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow group hover-lift">
+                    <a href="https://xz-ap.github.io/velapulse/projects/" class="block bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow group hover-lift">
                         <div class="w-14 h-14 rounded-xl bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                             <i class="fa fa-life-ring text-2xl text-primary group-hover:text-white transition-colors"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-3">终身支持</h3>
                         <p class="text-neutral">购买后享受终身技术支持和维护服务，让您无后顾之忧，使用更安心。</p>
                     </a>
-                </div>
-            </div>
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <span class="inline-block px-4 py-1.5 rounded-full bg-primary/5 text-primary text-sm font-medium mb-4">
-                        核心优势
-                    </span>
-                    <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold mb-6">为什么选择我们的产品</h2>
-                    <p class="text-neutral text-lg">我们专注于细节，致力于打造超越期待的产品体验，满足现代生活的各种需求。</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- 特点1 -->
-                    <a href="https://xz-ap.github.io/velapulse/projects/" class="block bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow group hover-lift">
-                        <div class="w-14 h-14 rounded-xl bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <i class="fa fa-lightbulb-o text-2xl text-primary group-hover:text-white transition-colors"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">创新设计</h3>
-                        <p class="text-neutral">由国际顶尖设计师团队打造，融合美学与功能性，为您带来视觉与使用的双重享受。</p>
-                    </div>
-
-                    <!-- 特点2 -->
-                    <a href="https://xz-ap.github.io/velapulse/projects/" class="block bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow group hover-lift">
-                        <div class="w-14 h-14 rounded-xl bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <i class="fa fa-leaf text-2xl text-primary group-hover:text-white transition-colors"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">环保材料</h3>
-                        <p class="text-neutral">采用100%可回收材料制作，减少环境负担，为可持续发展贡献一份力量。</p>
-                    </div>
-
-                    <!-- 特点3 -->
-                    <a href="https://xz-ap.github.io/velapulse/projects/" class="block bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow group hover-lift">
-                        <div class="w-14 h-14 rounded-xl bg-primary/5 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <i class="fa fa-life-ring text-2xl text-primary group-hover:text-white transition-colors"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">终身支持</h3>
-                        <p class="text-neutral">购买后享受终身技术支持和维护服务，让您无后顾之忧，使用更安心。</p>
-                    </div>
                 </div>
             </div>
         </section>
@@ -248,7 +211,7 @@
                 <div>
                     <a href="#" class="flex items-center space-x-2 mb-6">
                         <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center overflow-hidden">
-                            <img src="https://picsum.photos/id/237/100/100" alt="品牌Logo" class="logo-image">
+                            <img src="logo.png" alt="品牌Logo" class="logo-image">
                         </div>
                         <span class="text-xl font-bold tracking-tight">Brand</span>
                     </a>
@@ -265,7 +228,7 @@
                         </a>
                     </div>
                 </div>
-
+                
                 <div>
                     <h3 class="text-lg font-semibold mb-6">联系我们</h3>
                     <ul class="space-y-3">
@@ -283,7 +246,7 @@
                         </li>
                     </ul>
                 </div>
-
+                
                 <div>
                     <h3 class="text-lg font-semibold mb-6">法律信息</h3>
                     <ul class="space-y-3">
@@ -292,7 +255,7 @@
                     </ul>
                 </div>
             </div>
-
+            
             <div class="border-t border-gray-800 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2023 Brand. 保留所有权利。</p>
@@ -313,16 +276,16 @@
                         console.log('图片轮播容器未找到');
                         return;
                     }
-
+                    
                     const slides = container.querySelectorAll('.main-image');
                     if (slides.length < 1) {
                         console.log('未找到轮播图片');
                         return;
                     }
-
+                    
                     let currentSlide = 0;
                     const slideInterval = 5000; // 5秒切换一次
-
+                    
                     // 显示指定幻灯片
                     function showSlide(index) {
                         slides.forEach((slide, i) => {
@@ -330,24 +293,24 @@
                         });
                         currentSlide = index;
                     }
-
+                    
                     // 下一张幻灯片
                     function nextSlide() {
                         const nextIndex = (currentSlide + 1) % slides.length;
                         showSlide(nextIndex);
                     }
-
+                    
                     // 初始化显示第一张
                     showSlide(0);
-
+                    
                     // 自动轮播
                     setInterval(nextSlide, slideInterval);
                     console.log('图片轮播初始化完成');
                 }
-
+                
                 // 初始化所有功能
                 initImageSlider();
-
+                
                 console.log('所有功能初始化完成');
             } catch (error) {
                 console.error('初始化过程中发生错误:', error);
@@ -356,7 +319,7 @@
                 errorDiv.className = 'fixed top-20 left-0 right-0 bg-red-500 text-white p-4 text-center z-50';
                 errorDiv.textContent = '页面加载过程中发生错误，请刷新页面重试';
                 document.body.prepend(errorDiv);
-
+                
                 // 3秒后自动隐藏错误提示
                 setTimeout(() => {
                     errorDiv.style.opacity = '0';
@@ -368,3 +331,4 @@
     </script>
 </body>
 </html>
+    
